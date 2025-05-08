@@ -123,22 +123,23 @@ body.breathe-animation {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 8rem 0;
-  background-color: #D8E4FD;
+  padding-top: 6rem;
+  padding-bottom: 8rem;
+  background-color: #B4CDFD;
 }
 
 .blade-logo {
   width: 50vw;
-  max-width: 800px;
+  max-width: 600px;
   height: auto;
   margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 7rem;
 }
 
 .blade-tagline {
   font-family: 'TASA Orbiter Display', sans-serif;
-  font-size: 4vw;
-  font-weight: 500;
+  font-size: 5vw;
+  font-weight: 400;
   color: #222;
   text-align: center;
   display: flex;
@@ -146,6 +147,7 @@ body.breathe-animation {
   gap: 8px;
   flex-wrap: wrap;
   justify-content: center;
+  letter-spacing: -0.02em;
 }
 
 /* Media query for mobile devices */

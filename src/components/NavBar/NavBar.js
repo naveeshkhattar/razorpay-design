@@ -6,7 +6,7 @@ const NavBar = () => {
     <nav className="navbar">
       <div className="container">
         <div className="logo">
-          <span>Razorpay Design</span>
+          <img src="/img/Rp.svg" alt="Razorpay Logo" />
         </div>
         <div className="nav-links">
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon">

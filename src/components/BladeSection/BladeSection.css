@@ -1,7 +1,7 @@
 .blade-section {
   width: 100%;
-  min-height: 80vh;
-  background-color: #D8E4FD;
+  min-height: 50vh;
+  background-color: #B4CDFD;
   color: #fff;
   padding-bottom: 0rem;
   position: relative;
@@ -13,7 +13,7 @@
 
 
 .parallax-container {
-  height: 60vh;
+  height: 40vh;
   position: relative;
   overflow: hidden;
 }
@@ -22,7 +22,7 @@
   position: relative;
   display: flex;
   white-space: nowrap;
-  margin: 3vh 0;
+  margin: 0.5vh 0;
   width: 200%;
 }
 

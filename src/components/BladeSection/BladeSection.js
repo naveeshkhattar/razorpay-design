@@ -4,9 +4,9 @@ import './BladeSection.css';
 
 // Image imports
 const images = [
-  '/img/ImageTrail1.png',
-  '/img/ImageTrail2.png',
-  '/img/ImageTrail3.png'
+  '/img/BLADE 1.png',
+  '/img/BLADE 2.png',
+  '/img/BLADE 3.png'
 ];
 
 const BladeSection = () => {

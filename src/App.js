@@ -62,7 +62,7 @@ function App() {
         <img src="/img/BladeLogo.svg" alt="Blade Logo" className="blade-logo" />
         <div className="blade-tagline">
           <span>Build amazing products at </span>
-          <Cover>warp speed</Cover>
+          <Cover>warp speed!</Cover>
         </div>
       </div>
       
