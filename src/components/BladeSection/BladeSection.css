@@ -1,0 +1,96 @@
+.blade-section {
+  width: 100%;
+  min-height: 80vh;
+  background-color: #D8E4FD;
+  color: #fff;
+  padding-top: 4rem;
+  padding-bottom: 0rem;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+
+
+.parallax-container {
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-slide {
+  position: relative;
+  display: flex;
+  white-space: nowrap;
+  margin: 3vh 0;
+  width: 200%;
+}
+
+.phrase {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  gap: 2rem;
+}
+
+.phrase p {
+  font-family: 'TASA Orbiter Display', sans-serif;
+  font-size: 3.5vw;
+  font-weight: 500;
+  color: #000000;
+}
+
+.image-container {
+  position: relative;
+  height: 7.5vw;
+  
+  border-radius: 0px;
+ 
+  flex-shrink: 0;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .phrase p {
+    font-size: 6vw;
+  }
+  
+  .image-container {
+    height: 6vw;
+  }
+  
+  .parallax-container {
+    height: 60vh;
+  }
+  
+  .blade-title h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .phrase p {
+    font-size: 5vw;
+  }
+  
+  .image-container {
+    height: 5vw;
+  }
+  
+  .parallax-container {
+    height: 40vh;
+  }
+  
+  .blade-title h1 {
+    font-size: 2rem;
+  }
+} 

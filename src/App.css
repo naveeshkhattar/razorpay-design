@@ -1,0 +1,118 @@
+/* Custom font face definition */
+@font-face {
+  font-family: 'TheFont';
+  src: url("https://garet.typeforward.com/assets/fonts/shared/TFMixVF.woff2")
+    format('woff2');
+}
+
+/* TASA Orbiter Display font from CDN */
+@import url('https://fonts.cdnfonts.com/css/tasa-orbiter-display');
+
+/* Global styles */
+:root {
+  --scroll: 0;
+  --scroll-limit: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hero section styles */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Breathing animation styles */
+body.breathe-animation {
+  background-color: #305EFF;
+}
+
+.breathe-animation .hero-text {
+  font-family: 'TheFont';
+  font-size: clamp(10vw, 10vw, 50vh);
+  color: white;
+  text-align: center;
+  animation: letter-breathe 3s ease-in-out infinite;
+  z-index: 5;
+  position: relative;
+  pointer-events: none;
+  padding-top: 80px;
+}
+
+@keyframes letter-breathe {
+  from,
+  to {
+    font-variation-settings: 'wght' 100;
+  }
+
+  50% {
+    font-variation-settings: 'wght' 900;
+  }
+}
+
+/* Classes for the image trail effect */
+.loading::before {
+  content: '';
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+
+.loading::after {
+  content: 'Loading...';
+  position: fixed;
+  z-index: 100000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  font-family: sans-serif;
+} 

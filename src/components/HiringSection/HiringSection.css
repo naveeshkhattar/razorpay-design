@@ -1,0 +1,107 @@
+.hiring-section {
+  padding: 6rem 0;
+  background-color: #D8E4FD;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hiring-images-container {
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  padding: 3rem 1rem;
+  margin-bottom: 3rem;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  padding-left: 50px;
+  padding-right: 90px; /* Increased right padding to account for overlap */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+.hiring-images-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.hiring-image-wrapper {
+  flex: 0 0 auto;
+  margin: 0;
+  margin-right: -10px; /* Increased negative margin for more overlap */
+  transition: transform 0.3s ease, z-index 0s;
+  position: relative;
+  z-index: 1;
+  will-change: transform; /* Hint browser to optimize transforms */
+  transform: translateZ(0); /* Force hardware acceleration */
+  backface-visibility: hidden; /* Prevent flickering in some browsers */
+}
+
+.hiring-image-wrapper:hover {
+  z-index: 10; /* Bring hovered image to front */
+  transform: scale(1.05); /* Slightly enlarge the hovered image */
+}
+
+.hiring-image {
+  width: 230px;
+  height: 300px;
+  object-fit: cover;
+  background-color: #f0f0f0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  transition: box-shadow 0.3s ease;
+}
+
+.hiring-image-wrapper:hover .hiring-image {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.hiring-content {
+  text-align: center;
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hiring-heading {
+  font-family: 'TASA Orbiter Display', sans-serif;
+  margin-top: 0;
+  font-size: 7.5rem;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: #000;
+  text-transform: none;
+}
+
+.hiring-button {
+  font-family: 'TASA Orbiter Display', sans-serif;
+  display: inline-block;
+  background-color: #3366ff;
+  color: white;
+  border: none;
+  padding: 1.5rem 2.5rem;
+  font-size: 1.2rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hiring-button:hover {
+  background-color: #2952cc;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .hiring-heading {
+    font-size: 3.5rem;
+  }
+  
+  .hiring-image {
+    width: 180px;
+    height: 240px;
+  }
+} 

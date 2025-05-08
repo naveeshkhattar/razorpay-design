@@ -1,0 +1,61 @@
+.about-section {
+  padding: 120px 20px 160px 20px;
+  background-color: #D8E4FD;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-text {
+  max-width: 1200px;
+  margin: 0 auto 80px;
+}
+
+.about-text h2 {
+  font-family: 'TASA Orbiter Display', sans-serif;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.about-image-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  aspect-ratio: 1/1;
+}
+
+.changing-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .about-text h2 {
+    font-size: 36px;
+  }
+  
+  .image-container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-text h2 {
+    font-size: 28px;
+  }
+  
+  .about-section {
+    padding: 60px 15px;
+  }
+} 

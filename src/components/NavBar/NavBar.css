@@ -1,0 +1,62 @@
+.navbar {
+  position:fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: transparent;
+  padding: 32px 0 0 0;
+}
+
+.container {
+  background-color: transparent;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo span {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.join-us-btn {
+  font-family: 'TASA Orbiter Display', sans-serif;
+  display: inline-block;
+  background-color: white;
+  color: #3b82f6;
+  border: none;
+  padding: 1.2rem 2.2rem;
+  margin-left: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+.join-us-btn:hover {
+  background-color: #f8f8f8;
+  transform: translateY(-2px);
+}
+
+/* Ensure the navbar remains visible over content */
+.navbar {
+  pointer-events: auto;
+} 
