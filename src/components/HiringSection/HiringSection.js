@@ -10,19 +10,19 @@ const imageUrls = [
   '/img/about5.jpg',
   '/img/about6.jpg',
   '/img/about7.jpg',
-  '/img/ImageTrail1.png',
-  '/img/ImageTrail2.png',
-  '/img/ImageTrail3.png',
-  '/img/ImageTrail4.png',
-  '/img/ImageTrail5.png',
-  '/img/ImageTrail6.png',
-  '/img/ImageTrail7.png',
-  '/img/ImageTrail8.png',
-  '/img/ImageTrail9.png',
-  '/img/ImageTrail10.png',
-  '/img/ImageTrail11.png',
-  '/img/ImageTrail12.png',
-  '/img/ImageTrail13.png',
+  '/img/about8.jpg',
+  '/img/about9.jpg',
+  '/img/about10.jpg',
+  '/img/about11.jpg',
+  '/img/about12.jpg',
+  '/img/about13.jpg',
+  '/img/about14.jpg',
+  '/img/about15.jpg',
+  '/img/about16.jpg',
+  '/img/about17.jpg',
+  '/img/about18.jpg',
+  '/img/about19.jpg',
+  '/img/about20.jpg',
 ];
 
 const HiringSection = () => {
@@ -107,7 +107,7 @@ const HiringSection = () => {
       </div>
       
       <div className="hiring-content">
-        <h2 className="hiring-heading">Think you're crazy <br />enough to join us?</h2>
+        <h2 className="hiring-heading">Design the future of finance with us</h2>
         <a href="https://razorpay.com/jobs/" className="hiring-button">Apply Now</a>
       </div>
     </section>

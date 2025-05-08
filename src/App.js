@@ -6,6 +6,7 @@ import AboutSection from './components/AboutSection/AboutSection';
 import BladeSection from './components/BladeSection/BladeSection';
 import BlogSection from './components/BlogSection/BlogSection';
 import HiringSection from './components/HiringSection/HiringSection';
+import { Cover } from './components/ui/cover';
 
 // Sample image paths - these are stored in public/img folder // Don't change the image format or path
 const sampleImages = [
@@ -55,6 +56,15 @@ function App() {
       
       {/* About Section with changing images */}
       <AboutSection />
+      
+      {/* Blade Logo */}
+      <div className="blade-logo-container">
+        <img src="/img/BladeLogo.svg" alt="Blade Logo" className="blade-logo" />
+        <div className="blade-tagline">
+          <span>Build amazing products at </span>
+          <Cover>warp speed</Cover>
+        </div>
+      </div>
       
       {/* Blade Section with Parallax Effect */}
       <BladeSection />

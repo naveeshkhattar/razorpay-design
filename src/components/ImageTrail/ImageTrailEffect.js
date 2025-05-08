@@ -114,7 +114,7 @@ const ImageTrailEffect = ({ images }) => {
       
       isActive() {
         // check if image is animating or if it's visible
-        return window.TweenMax.isTweening(this.DOM.el) || this.DOM.el.style.opacity != 0;
+        return window.TweenMax.isTweening(this.DOM.el) || this.DOM.el.style.opacity !== 0;
       }
     }
 
@@ -237,7 +237,7 @@ const ImageTrailEffect = ({ images }) => {
             key={index} 
             className="content__img" 
             src={src} 
-            alt={`Image ${index + 1}`} 
+            alt={`${index + 1}`} 
             ref={el => el && (imagesRef.current[index] = el)}
           />
         ))}

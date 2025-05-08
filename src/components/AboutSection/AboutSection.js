@@ -3,13 +3,16 @@ import './AboutSection.css';
 
 // Sample image array - replace with your actual images
 const images = [
-  '/img/about1.jpg',
-  '/img/about2.jpg',
-  '/img/about3.jpg',
-  '/img/about4.jpg',
-  '/img/about5.jpg',
-  '/img/about6.jpg',
-  '/img/about7.jpg',
+  '/img/rituals1.jpg',
+  '/img/rituals2.jpg',
+  '/img/rituals3.jpg',
+  '/img/rituals4.jpg',
+  '/img/rituals5.jpg',
+  '/img/rituals6.jpg',
+  '/img/rituals7.jpg',
+  '/img/rituals8.jpg',
+  '/img/rituals9.jpg',
+  '/img/rituals10.jpg',
 ];
 
 const AboutSection = () => {

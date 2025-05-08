@@ -115,4 +115,48 @@ body.breathe-animation {
   font-weight: 500;
   color: white;
   font-family: sans-serif;
+}
+
+/* Blade Logo styles */
+.blade-logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem 0;
+  background-color: #D8E4FD;
+}
+
+.blade-logo {
+  width: 50vw;
+  max-width: 800px;
+  height: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.blade-tagline {
+  font-family: 'TASA Orbiter Display', sans-serif;
+  font-size: 4vw;
+  font-weight: 500;
+  color: #222;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .blade-logo {
+    width: 80vw;
+    max-width: 200px;
+  }
+  
+  .blade-tagline {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
 } 

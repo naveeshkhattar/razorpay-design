@@ -3,7 +3,6 @@
   min-height: 80vh;
   background-color: #D8E4FD;
   color: #fff;
-  padding-top: 4rem;
   padding-bottom: 0rem;
   position: relative;
   overflow: hidden;
@@ -14,7 +13,7 @@
 
 
 .parallax-container {
-  height: 80vh;
+  height: 60vh;
   position: relative;
   overflow: hidden;
 }
@@ -36,9 +35,9 @@
 
 .phrase p {
   font-family: 'TASA Orbiter Display', sans-serif;
-  font-size: 3.5vw;
+  font-size: 3vw;
   font-weight: 500;
-  color: #000000;
+  color: #3e3e3e;
 }
 
 .image-container {

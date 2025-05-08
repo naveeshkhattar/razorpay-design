@@ -12,7 +12,6 @@ const images = [
 const BladeSection = () => {
   const sectionRef = useRef(null);
   const container = useRef(null);
-  const [scrollRange, setScrollRange] = useState({ start: 0, end: 1 });
   
   useEffect(() => {
     // Function to calculate section visibility
@@ -23,8 +22,7 @@ const BladeSection = () => {
         const offsetTop = rect.top + window.scrollY;
         const start = offsetTop - windowHeight;
         const end = offsetTop + rect.height;
-        
-        setScrollRange({ start, end });
+
       }
     };
     
@@ -51,7 +49,7 @@ const BladeSection = () => {
           src={images[0]} 
           direction={'left'} 
           left={"15%"} 
-          texts={["Blade Design System", "Powering Razorpay", "Blade Design System"]}
+          texts={["11K Downloads", "30+ Products", "60+ Components"]}
           progress={scrollYProgress}
         />
         <Slide 
